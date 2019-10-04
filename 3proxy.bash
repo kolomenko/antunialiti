@@ -1,6 +1,4 @@
 #!/bin/bash
-echo "$1" | sudo -S apt-get update 
-echo "$1" | sudo -S apt-get upgrade
 echo "$1" | sudo -S apt-get install unzip
 echo "$1" | sudo -S wget https://github.com/kolomenko/antunialiti/raw/master/conf.zip # url с архивом
 echo "$1" | sudo -S unzip conf.zip
