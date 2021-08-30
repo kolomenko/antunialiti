@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProxifierProfile version="102" platform="Windows" product_id="1" product_minver="400">
+	<Options>
+		<Resolve>
+			<AutoModeDetection enabled="true" />
+			<ViaProxy enabled="false" />
+			<ExclusionList OnlyFromListMode="false">%ComputerName%; localhost; *.local</ExclusionList>
+			<DnsUdpMode>0</DnsUdpMode>
+		</Resolve>
+		<Encryption mode="disabled" />
+		<ConnectionLoopDetection enabled="true" resolve="true" />
+		<ProcessOtherUsers enabled="false" />
+		<ProcessServices enabled="false" />
+		<HandleDirectConnections enabled="false" />
+		<HttpProxiesSupport enabled="false" />
+		<ProxificationPortableEngine subsystem="32">
+			<Type hotpatch="true">Prologue</Type>
+			<Location>Winsock</Location>
+		</ProxificationPortableEngine>
+		<ProxificationPortableEngine subsystem="64">
+			<Type hotpatch="false">Prologue</Type>
+			<Location>Winsock</Location>
+		</ProxificationPortableEngine>
+	</Options>
+	<ProxyList>
+		<Proxy id="107" type="SOCKS5">
+			<Authentication enabled="true">
+				<Password>1278qaz</Password>
+				<Username>god</Username>
+			</Authentication>
+			<Options>48</Options>
+			<Port>15505</Port>
+			<Address>185.43.110.108</Address>
+		</Proxy>
+		<Proxy id="108" type="SOCKS5">
+			<Authentication enabled="true">
+				<Password>1278qaz</Password>
+				<Username>god</Username>
+			</Authentication>
+			<Options>48</Options>
+			<Port>29043</Port>
+			<Address>185.43.110.108</Address>
+		</Proxy>
+	</ProxyList>
+	<ChainList />
+	<RuleList>
+		<Rule enabled="true">
+			<Action type="Direct" />
+			<Name>Default</Name>
+		</Rule>
+	</RuleList>
+</ProxifierProfile>
